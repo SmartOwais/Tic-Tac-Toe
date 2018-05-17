@@ -1,0 +1,82 @@
+<html>
+<head>
+
+<link rel = "stylesheet"
+  type = "text/css"
+  href = "myStyle.css" />
+</head>
+<body>
+	<main>
+		<section id="startScreen">
+			<header id="startHead">
+			<div>
+				<h1 id="tic">Tic</h1>
+				<h1 id="tac">Tac</h1>
+				<h1 id="toe">Toe</h1>
+			</div>
+			</header>
+		
+		<section id="choice">
+			<div>
+				<h2 id="x" onclick="startGame('x')">X</h2><h3>OR</h3><h2 id="o" onclick="startGame('o')">0</h2>
+			</div>
+		</section>
+		
+		<section id="color_scheme">
+			<div id="primary" onclick="idChanger(1)">
+				<h2>Classic</h2>
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div id="color1" onclick="idChanger(2)">
+				<h2>Red &#38; Black</h2>
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div id="color2" onclick="idChanger(3)">
+				<h2>Blue &#38; Pink</h2>
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			
+		</section>
+		</section>
+		<section id="gameplay" style="display: none;">
+			
+			<header id="result">
+				
+				<h1 id="change"></h1>
+				
+			</header>
+			
+			<section id="board">
+				<table>
+						<tr class="table_row">
+							<td id="0" onclick="turn(0)"></td>
+							<td id="1" onclick="turn(1)"></td>
+							<td id="2" onclick="turn(2)"></td>
+						</tr>
+						<tr class="table_row">
+							<td id="3" onclick="turn(3)"></td>
+							<td id="4" onclick="turn(4)"></td>
+							<td id="5" onclick="turn(5)"></td>
+						</tr>
+						<tr class="table_row">
+							<td id="6" onclick="turn(6)"></td>
+							<td id="7" onclick="turn(7)"></td>
+							<td id="8" onclick="turn(8)"></td>
+						</tr>
+					</table>
+			</section>
+				<h2 id="restart" onclick="reset()">Restart</h2>
+		</section>
+	</main>
+	  <script src="myScript.js"></script>
+</body>
+</html>
